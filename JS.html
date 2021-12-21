@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập JS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Optional JavaScript -->
+    <!-- Bài tập 1 -->
+    <div class="card">
+      <div class="card-header">Bài tập 1</div>
+      <div class="card-body">
+        <h5 class="card-title">Tính tiền lương nhân viên</h5>
+        <div class="input__group">
+          <p class="card-text">Nhập lương 1 ngày</p>
+          <input id="luong1ngay" type="text" placeholder="Nhập lương 1 ngày" />
+        </div>
+        <div class="input__group">
+          <p class="card-text">Nhập số ngày làm</p>
+          <input id="songaylam" type="text" placeholder="Nhập số ngày làm" />
+        </div>
+      </div>
+      <a href="#" class="btn btn-primary" onclick="tinhtien()"
+        >Tính tiền lương</a
+      >
+      <p class="logketqua" id="sum"></p>
+    </div>
+    <!-- bài tập 2 -->
+    <div class="card">
+      <div class="card-header">Bài tập 2</div>
+      <div class="card-body">
+        <h5 class="card-title">Tính giá trị trung bình</h5>
+        <div class="input__group">
+          <p class="card-text">Nhập số thực 1</p>
+          <input id="n1" type="text" placeholder="Nhập số thực 1" />
+        </div>
+        <div class="input__group">
+          <p class="card-text">Nhập số thực 2</p>
+          <input id="n2" type="text" placeholder="Nhập số thực 2" />
+        </div>
+        <div class="input__group">
+          <p class="card-text">Nhập số thực 3</p>
+          <input id="n3" type="text" placeholder="Nhập số thực 3" />
+        </div>
+        <div class="input__group">
+          <p class="card-text">Nhập số thực 4</p>
+          <input id="n4" type="text" placeholder="Nhập số thực 4" />
+        </div>
+        <div class="input__group">
+          <p class="card-text">Nhập số thực 5</p>
+          <input id="n5" type="text" placeholder="Nhập số thực 5" />
+        </div>
+      </div>
+      <a href="#" class="btn btn-primary" onclick="tinhtrungbinh()"
+        >Tính giá trị trung bình</a
+      >
+      <p class="logketqua" id="average"></p>
+    </div>
+
+    <!-- Bài tập 3 -->
+    <div class="card">
+      <div class="card-header">Bài tập 3</div>
+      <div class="card-body">
+        <h5 class="card-title">Quy Đổi tiền</h5>
+        <div class="input__group">
+          <p class="card-text">Giá trị USD hiện tại:</p>
+          <input id="usd" type="text" placeholder="Nhập giá trị USD hiện tại" />
+        </div>
+        <div class="input__group">
+          <p class="card-text">Nhập số tiền cần quy đổi</p>
+          <input
+            id="change"
+            type="text"
+            placeholder="Nhập số tiền cần quy đổi"
+          />
+        </div>
+      </div>
+      <a href="#" class="btn btn-primary" onclick="usdtovnd()"
+        >Tính tiền quy đổi</a
+      >
+      <p class="logketqua" id="vnd"></p>
+    </div>
+    <!-- Bài tập 4 -->
+    <div class="card">
+      <div class="card-header">Bài tập 4</div>
+      <div class="card-body">
+        <h5 class="card-title">Tính diện tích, chu vi hình chữ nhật</h5>
+        <div class="input__group">
+          <p class="card-text">Nhập chiều dài (cm)</p>
+          <input id="chieudai" type="text" placeholder="Nhập chiều dài" />
+        </div>
+        <div class="input__group">
+          <p class="card-text">Nhập chiều rộng (cm)</p>
+          <input id="chieurong" type="text" placeholder="Nhập chiều rộng" />
+        </div>
+      </div>
+      <a href="#" class="btn btn-primary" onclick="hinhchunhat()"
+        >Tính diện tích, chu vi hình chữ nhật</a
+      >
+      <p class="logketqua" id="chuvi"></p>
+      <p class="logketqua" id="dientich"></p>
+    </div>
+    <!-- Bài tập 5 -->
+    <div class="card">
+      <div class="card-header">Bài tập 5</div>
+      <div class="card-body">
+        <h5 class="card-title">Tính tổng 2 ký số</h5>
+        <div class="input__group">
+          <p class="card-text">Nhập số có 2 chữ số</p>
+          <input id="number" type="text" placeholder="Nhập số có 2 chữ số" />
+        </div>
+      </div>
+      <a href="#" class="btn btn-primary" onclick="tongkyso()"
+        >Tính tổng 2 ký số</a
+      >
+      <p class="logketqua" id="ketqua"></p>
+    </div>
+    <script src="./bai1.js"></script>
+    <script src="./bai2.js"></script>
+    <script src="./bai3.js"></script>
+    <script src="./bai4.js"></script>
+    <script src="./bai5.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
